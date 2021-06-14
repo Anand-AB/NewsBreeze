@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-18dp"
+    android:background="@drawable/bg_top_side_rounded_corner"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.newsDetail.NewsDetailActivity"
+    tools:showIn="@layout/activity_news_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_18sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_person"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_person" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/tv_save"
+                android:layout_toRightOf="@+id/iv_person"
+                android:orientation="vertical">
+
+                <com.anand.newsbreeze.presentation.core.views.ChivoRegularTextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="James Adam"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.anand.newsbreeze.presentation.core.views.ChivoRegularTextView
+                    android:id="@+id/tv_profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="James Adam"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+            <com.anand.newsbreeze.presentation.core.views.ChivoRegularTextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@drawable/bg_green_view"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_23sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_23sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Save"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/_13sdp" />
+
+        </RelativeLayout>
+
+        <com.anand.newsbreeze.presentation.core.views.QueensParkTextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_7sdp"
+            android:maxLines="3"
+            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan ium doloremque laudan..."
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_12sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingRight="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_5sdp">
+    <!--    For full width-->
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_1sdp"-->
+    <!--        android:layout_marginTop="@dimen/_16sdp" />-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_news"
+        android:layout_width="@dimen/_95sdp"
+        android:layout_height="@dimen/_95sdp"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <com.anand.newsbreeze.presentation.core.views.ChivoRegularTextView
+            android:id="@+id/tv_hashtag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:paddingBottom="@dimen/_6sdp"
+            android:text="#protest"
+            android:textColor="@color/saved_green"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.anand.newsbreeze.presentation.core.views.QueensParkBoldTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:text="Lorem ipsum dolor sit amet consectetur adi"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.anand.newsbreeze.presentation.core.views.PublicSansRegularTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29-03-21"
+                android:textColor="@color/date_color"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.anand.newsbreeze.presentation.core.views.ChivoRegularTextView
+                android:id="@+id/tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text=" \u2022 James Adam"
+                android:textColor="@color/date_color"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
